@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management CRM Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="logo-area">
+        <div class="logo-text">LogoHere</div>
+        <div class="logo-sub">Project Management</div>
+      </div>
+      <nav class="nav">
+        <a class="nav-item active" href="#"><i class="ti ti-layout-dashboard"></i><span>Dashboard</span></a>
+        <a class="nav-item" href="#"><i class="ti ti-versions"></i><span>Application</span><span
+            class="nav-badge">3</span></a>
+        <div class="nav-group">Finance</div>
+        <a class="nav-item" href="#"><i class="ti ti-file-invoice"></i><span>Invoices</span></a>
+        <a class="nav-item" href="#"><i class="ti ti-report"></i><span>Reports</span></a>
+        <div class="nav-group">Settings</div>
+        <a class="nav-item" href="#"><i class="ti ti-settings"></i><span>Configuration</span></a>
+        <a class="nav-item" href="#"><i class="ti ti-user"></i><span>Contact</span></a>
+        <a class="nav-item" href="#"><i class="ti ti-credit-card"></i><span>Expense</span></a>
+        <a class="nav-item" href="#"><i class="ti ti-coin"></i><span>Income</span></a>
+        <a class="nav-item" href="#"><i class="ti ti-users"></i><span>User</span></a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="u-row">
+          <div class="u-av">HG</div>
+          <div>
+            <div class="u-name">Hal9000</div>
+            <div class="u-role">Administrator</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <div class="top-bar">
+        <div>
+          <span class="page-title">Acquisition Summary Overview</span>
+          <span class="page-sub"> · All Projects</span>
+        </div>
+        <div class="search-wrap">
+          <i class="ti ti-search"></i>
+          <input type="text" placeholder="Search here">
+        </div>
+        <div class="icon-btn"><i class="ti ti-bell"></i></div>
+        <div class="icon-btn" style="position:relative">
+          <i class="ti ti-user"></i>
+          <span
+            style="position:absolute;top:6px;right:6px;width:7px;height:7px;border-radius:50%;background:#639922;border:1.5px solid #fff"></span>
+        </div>
+        <button class="btn-primary"><i class="ti ti-plus"></i>New Project</button>
+      </div>
+
+      <div class="content">
+        <!-- Stats -->
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-icon" style="background:#EAF3DE"><i class="ti ti-check"
+                style="font-size:20px;color:#639922"></i></div>
+            <div class="stat-label">Completed Project</div>
+            <div class="stat-val">24</div>
+            <div class="stat-chg chg-up"><i class="ti ti-arrow-up" style="font-size:11px"></i> 1.3% this month</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" style="background:#FAEEDA"><i class="ti ti-clock"
+                style="font-size:20px;color:#BA7517"></i></div>
+            <div class="stat-label">Pending Project</div>
+            <div class="stat-val">07</div>
+            <div class="stat-chg chg-up"><i class="ti ti-arrow-up" style="font-size:11px"></i> 1.3% this month</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" style="background:#E6F1FB"><i class="ti ti-coin"
+                style="font-size:20px;color:#185FA5"></i></div>
+            <div class="stat-label">Total Income</div>
+            <div class="stat-val">$12,000</div>
+            <div class="stat-chg chg-up"><i class="ti ti-arrow-up" style="font-size:11px"></i> 1.5% this month</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" style="background:#FCEBEB"><i class="ti ti-chart-bar"
+                style="font-size:20px;color:#A32D2D"></i></div>
+            <div class="stat-label">Total Expense</div>
+            <div class="stat-val">$8,450</div>
+            <div class="stat-chg chg-dn"><i class="ti ti-arrow-down" style="font-size:11px"></i> 0.9% this month</div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-cards">
+          <div class="quick-card">
+            <div class="qc-icon" style="background:#E6F1FB"><i class="ti ti-plus" style="color:#185FA5"></i></div>
+            <div class="qc-label">Add Product</div>
+            <div class="qc-sub">Create new item</div>
+          </div>
+          <div class="quick-card">
+            <div class="qc-icon" style="background:#FBEAF0"><i class="ti ti-heart" style="color:#993556"></i></div>
+            <div class="qc-label">Wishlist</div>
+            <div class="qc-sub">12 saved items</div>
+          </div>
+          <div class="quick-card">
+            <div class="qc-icon" style="background:#EAF3DE"><i class="ti ti-tag" style="color:#3B6D11"></i></div>
+            <div class="qc-label">Offer</div>
+            <div class="qc-sub">5 active offers</div>
+          </div>
+          <div class="quick-card">
+            <div class="qc-icon" style="background:#FAEEDA"><i class="ti ti-gift" style="color:#854F0B"></i></div>
+            <div class="qc-label">Voucher</div>
+            <div class="qc-sub">Promo codes</div>
+          </div>
+        </div>
+
+        <!-- Mid row -->
+        <div class="mid-row">
+          <div class="card">
+            <div class="card-hdr">
+              <span class="card-title">Project summary</span>
+              <select class="mini" id="filter-select">
+                <option>All Project</option>
+                <option>Ongoing</option>
+                <option>Completed</option>
+                <option>Pending</option>
+              </select>
+            </div>
+            <div class="tbl-wrap">
+              <table class="tbl" id="project-table">
+                <thead>
+                  <tr>
+                    <th>Project</th>
+                    <th>Project No</th>
+                    <th>Date</th>
+                    <th style="min-width:120px">Progress</th>
+                    <th>Amount</th>
+                    <th>Service</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="tbl-body"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-hdr">
+              <span class="card-title">Awards</span>
+              <select class="mini">
+                <option>FY2022</option>
+                <option>FY2021</option>
+                <option>FY2023</option>
+              </select>
+            </div>
+            <div class="donut-wrap">
+              <svg class="donut-svg" viewBox="0 0 140 140">
+                <circle cx="70" cy="70" r="50" fill="none" stroke="#F1F5F9" stroke-width="20" />
+                <circle cx="70" cy="70" r="50" fill="none" stroke="#639922" stroke-width="20" stroke-dasharray="78 236"
+                  stroke-dashoffset="0" transform="rotate(-90 70 70)" />
+                <circle cx="70" cy="70" r="50" fill="none" stroke="#378ADD" stroke-width="20" stroke-dasharray="63 236"
+                  stroke-dashoffset="-78" transform="rotate(-90 70 70)" />
+                <circle cx="70" cy="70" r="50" fill="none" stroke="#EF9F27" stroke-width="20" stroke-dasharray="57 236"
+                  stroke-dashoffset="-141" transform="rotate(-90 70 70)" />
+                <circle cx="70" cy="70" r="50" fill="none" stroke="#D4537E" stroke-width="20" stroke-dasharray="38 236"
+                  stroke-dashoffset="-198" transform="rotate(-90 70 70)" />
+                <text x="70" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#1E2A3A">$12,000</text>
+                <text x="70" y="80" text-anchor="middle" font-size="10" fill="#94A3B8">Total Income</text>
+              </svg>
+              <div class="legend">
+                <div class="leg-item">
+                  <div class="leg-left">
+                    <div class="leg-dot" style="background:#639922"></div>FY2022 Q1
+                  </div>
+                  <div class="leg-val">33%</div>
+                </div>
+                <div class="leg-item">
+                  <div class="leg-left">
+                    <div class="leg-dot" style="background:#378ADD"></div>FY2022 Q4
+                  </div>
+                  <div class="leg-val">27%</div>
+                </div>
+                <div class="leg-item">
+                  <div class="leg-left">
+                    <div class="leg-dot" style="background:#EF9F27"></div>FY2022 Q3
+                  </div>
+                  <div class="leg-val">24%</div>
+                </div>
+                <div class="leg-item">
+                  <div class="leg-left">
+                    <div class="leg-dot" style="background:#D4537E"></div>FY2022 Q2
+                  </div>
+                  <div class="leg-val">16%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom row -->
+        <div class="bot-row">
+          <div class="card">
+            <div class="card-hdr">
+              <span class="card-title">Overall summary</span>
+              <select class="mini" id="period-select">
+                <option>Yearly</option>
+                <option>Monthly</option>
+              </select>
+            </div>
+            <div class="mini-bar-wrap" id="bar-chart"></div>
+            <div class="mbar-labels" id="bar-labels"></div>
+            <div class="chart-legend">
+              <div class="cl-item">
+                <div class="cl-dot" style="background:#639922"></div>Project
+              </div>
+              <div class="cl-item">
+                <div class="cl-dot" style="background:#378ADD"></div>Task
+              </div>
+              <div class="cl-item">
+                <div class="cl-dot" style="background:#EF9F27"></div>Client
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-hdr">
+              <span class="card-title">Crypto assets</span>
+              <select class="mini">
+                <option>Monthly</option>
+                <option>Weekly</option>
+                <option>Daily</option>
+              </select>
+            </div>
+            <div class="crypto-item">
+              <div class="crypto-left">
+                <div class="crypto-icon" style="background:#FAEEDA;color:#854F0B">₿</div>
+                <div>
+                  <div class="crypto-name">Bitcoin</div>
+                  <div class="crypto-sym">BTC</div>
+                </div>
+              </div>
+              <div>
+                <div class="crypto-val">$28,450</div>
+                <div class="crypto-pct pct-up" style="text-align:right">+20% ↑</div>
+              </div>
+            </div>
+            <div class="crypto-item">
+              <div class="crypto-left">
+                <div class="crypto-icon" style="background:#E6F1FB;color:#185FA5">X</div>
+                <div>
+                  <div class="crypto-name">Ripple</div>
+                  <div class="crypto-sym">XRP</div>
+                </div>
+              </div>
+              <div>
+                <div class="crypto-val">$0.52</div>
+                <div class="crypto-pct pct-dn" style="text-align:right">-10% ↓</div>
+              </div>
+            </div>
+            <div class="crypto-item">
+              <div class="crypto-left">
+                <div class="crypto-icon" style="background:#EAF3DE;color:#3B6D11">₳</div>
+                <div>
+                  <div class="crypto-name">Cardano</div>
+                  <div class="crypto-sym">ADA</div>
+                </div>
+              </div>
+              <div>
+                <div class="crypto-val">$0.38</div>
+                <div class="crypto-pct pct-up" style="text-align:right">+40% ↑</div>
+              </div>
+            </div>
+            <div class="crypto-item">
+              <div class="crypto-left">
+                <div class="crypto-icon" style="background:#EEEDFE;color:#534AB7">Ξ</div>
+                <div>
+                  <div class="crypto-name">Ethereum</div>
+                  <div class="crypto-sym">ETH</div>
+                </div>
+              </div>
+              <div>
+                <div class="crypto-val">$1,820</div>
+                <div class="crypto-pct pct-up" style="text-align:right">+30% ↑</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const projects = [
+      { name: "New York Let DG", sub: "Service type: Navy", no: "#252523", date: "12/10/2025", pct: 78, color: "#639922", amount: "$46,404,888", service: "Navy", status: "Completed", sc: "s-done" },
+      { name: "You can change the text and all", sub: "Service type: Harry", no: "#252523", date: "12/10/2025", pct: 45, color: "#378ADD", amount: "$46,484,889", service: "Harry", status: "Appointed", sc: "s-prog" },
+      { name: "Landing Page Design", sub: "Service type: Navy", no: "#252523", date: "12/10/2025", pct: 12, color: "#EF9F27", amount: "$43,454,989", service: "Navy", status: "Pending", sc: "s-pend" },
+      { name: "Landing Page Design", sub: "Service type: Navy", no: "#252323", date: "11/25/2025", pct: 62, color: "#D4537E", amount: "$31,200,000", service: "Navy", status: "On Hold", sc: "s-hold" },
+      { name: "E-Commerce Platform", sub: "Service type: Digital", no: "#252324", date: "11/18/2025", pct: 90, color: "#639922", amount: "$55,000,000", service: "Digital", status: "Completed", sc: "s-done" },
+      { name: "Mobile App Redesign", sub: "Service type: UX", no: "#252325", date: "10/30/2025", pct: 30, color: "#EF9F27", amount: "$18,500,000", service: "UX", status: "Pending", sc: "s-pend" },
+    ];
+
+    function renderTable(filter) {
+      const body = document.getElementById('tbl-body');
+      const filtered = filter === 'All Project' ? projects :
+        projects.filter(p => {
+          if (filter === 'Completed') return p.status === 'Completed';
+          if (filter === 'Ongoing') return p.status === 'Appointed';
+          if (filter === 'Pending') return p.status === 'Pending' || p.status === 'On Hold';
+          return true;
+        });
+      body.innerHTML = filtered.map(p => `
+    <tr>
+      <td><div class="proj-name">${p.name}</div><div class="proj-sub">${p.sub}</div></td>
+      <td style="color:#94A3B8">${p.no}</td>
+      <td style="color:#94A3B8;white-space:nowrap">${p.date}</td>
+      <td><div class="prog-wrap"><div class="prog-bar"><div class="prog-fill" style="width:${p.pct}%;background:${p.color}"></div></div><div class="prog-pct">${p.pct}%</div></div></td>
+      <td style="white-space:nowrap">${p.amount}</td>
+      <td style="color:#94A3B8">${p.service}</td>
+      <td><span class="status-pill ${p.sc}">${p.status}</span></td>
+    </tr>
+  `).join('');
+    }
+    renderTable('All Project');
+    document.getElementById('filter-select').addEventListener('change', e => renderTable(e.target.value));
+
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const proj = [55, 40, 65, 50, 70, 80, 60, 75, 85, 65, 90, 70];
+    const task = [35, 55, 45, 60, 40, 55, 70, 50, 60, 75, 55, 80];
+    const clie = [20, 30, 25, 35, 45, 30, 40, 35, 45, 30, 40, 50];
+    const maxV = 90;
+
+    function renderBars(labels, d1, d2, d3) {
+      const bc = document.getElementById('bar-chart');
+      const bl = document.getElementById('bar-labels');
+      bc.innerHTML = ''; bl.innerHTML = '';
+      labels.forEach((_, i) => {
+        const g = document.createElement('div');
+        g.className = 'bar-group';
+        [[d1[i], '#639922'], [d2[i], '#378ADD'], [d3[i], '#EF9F27']].forEach(([v, c]) => {
+          const b = document.createElement('div');
+          b.className = 'mbar';
+          b.style.cssText = `background:${c};height:${Math.round(v / maxV * 72)}px`;
+          g.appendChild(b);
+        });
+        bc.appendChild(g);
+        const lbl = document.createElement('div');
+        lbl.className = 'mbar-lbl';
+        lbl.textContent = labels[i];
+        bl.appendChild(lbl);
+      });
+    }
+    renderBars(months, proj, task, clie);
+
+    document.getElementById('period-select').addEventListener('change', function () {
+      if (this.value === 'Monthly') {
+        const weeks = ['W1', 'W2', 'W3', 'W4'];
+        renderBars(weeks, [60, 75, 50, 80], [40, 55, 70, 45], [30, 45, 35, 55]);
+      } else {
+        renderBars(months, proj, task, clie);
+      }
+    });
+
+    document.querySelectorAll('.nav-item').forEach(n => {
+      n.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelectorAll('.nav-item').forEach(x => x.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.quick-card').forEach(c => {
+      c.addEventListener('click', () => {
+        c.style.borderColor = '#97C459';
+        c.style.background = '#FAFFF5';
+        setTimeout(() => { c.style.borderColor = ''; c.style.background = ''; }, 800);
+      });
+    });
+  </script>
+</body>
+
+</html>
