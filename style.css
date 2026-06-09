@@ -32,6 +32,13 @@
       border-bottom: 0.5px solid rgba(255, 255, 255, 0.08)
     }
 
+    .text-oligib{
+      margin-top: 50px;
+      margin-bottom: 40px;
+      justify-content: center;
+      background: #185FA5;
+    }
+
     .logo-text {
       font-size: 16px;
       font-weight: 600;
