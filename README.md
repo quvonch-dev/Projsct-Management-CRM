@@ -23,3 +23,4 @@ Bu loyiha Figma CRM templatega asoslangan to'liq funksional dashboard hisoblanad
 - Tabler Icons (CDN orqali)
 - Hech qanday freymvork yoki kutubxona kerak emas
 # Projsct-Management-CRM
+# Project-Management
